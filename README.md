@@ -57,3 +57,14 @@ nginx   1/1     Running   0          52s
 ```
 ➜ kubectl delete pods nginx
 ```
+
+## Manifest File
+```
+➜ kubectl apply -f manifest.yml
+pod/nginx created
+```
+```
+➜ kubectl get pods
+NAME    READY   STATUS    RESTARTS   AGE
+nginx   1/1     Running   0          41s
+```
