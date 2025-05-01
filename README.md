@@ -32,3 +32,28 @@ eb928ef5e8dd   kindest/node:v1.32.2       "/usr/local/bin/entr…"   About a min
 8f5755a0b804   kindest/node:v1.32.2       "/usr/local/bin/entr…"   About a minute ago   Up About a minute                                                    local-worker2
 
 ```
+## Cluster Credentials
+```
+➜ cat ~/.kube/config
+```
+```
+➜ kubectl get pods
+No resources found in default namespace.
+```
+
+## Starting first pod using k8s
+```
+➜  kubectl run nginx --image=nginx --port=80
+pod/nginx created
+```
+```
+➜ kubectl get pods
+NAME    READY   STATUS    RESTARTS   AGE
+nginx   1/1     Running   0          52s
+```
+```
+➜ kubectl describe pods nginx
+```
+```
+➜ kubectl delete pods nginx
+```
