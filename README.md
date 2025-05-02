@@ -68,3 +68,11 @@ pod/nginx created
 NAME    READY   STATUS    RESTARTS   AGE
 nginx   1/1     Running   0          41s
 ```
+
+```
+➜ k apply -f rs.yml
+replicaset.apps/nginx-replicaset created
+➜ k get rs
+NAME               DESIRED   CURRENT   READY   AGE
+nginx-replicaset   3         3         1       6s
+```
