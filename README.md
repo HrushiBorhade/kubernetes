@@ -81,3 +81,18 @@ nginx-replicaset-28vjx   1/1     Running   0          44h
 nginx-replicaset-chxd5   1/1     Running   0          44h
 nginx-replicaset-nptf2   1/1     Running   0          44h
 ```
+```
+➜  k apply -f deployment.yml
+deployment.apps/nginx-deployment created
+➜  k get deployment
+NAME               READY   UP-TO-DATE   AVAILABLE   AGE
+nginx-deployment   3/3     3            3           6s
+➜  k get rs
+NAME                        DESIRED   CURRENT   READY   AGE
+nginx-deployment-96b9d695   3         3         3       8s
+➜  k get pods
+NAME                              READY   STATUS    RESTARTS   AGE
+nginx-deployment-96b9d695-2f86s   1/1     Running   0          11s
+nginx-deployment-96b9d695-4hxlq   1/1     Running   0          11s
+nginx-deployment-96b9d695-vk6d7   1/1     Running   0          11s
+```
