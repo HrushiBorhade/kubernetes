@@ -75,4 +75,9 @@ replicaset.apps/nginx-replicaset created
 ➜ k get rs
 NAME               DESIRED   CURRENT   READY   AGE
 nginx-replicaset   3         3         1       6s
+➜ k get pods
+NAME                     READY   STATUS    RESTARTS   AGE
+nginx-replicaset-28vjx   1/1     Running   0          44h
+nginx-replicaset-chxd5   1/1     Running   0          44h
+nginx-replicaset-nptf2   1/1     Running   0          44h
 ```
