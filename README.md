@@ -96,3 +96,11 @@ nginx-deployment-96b9d695-2f86s   1/1     Running   0          11s
 nginx-deployment-96b9d695-4hxlq   1/1     Running   0          11s
 nginx-deployment-96b9d695-vk6d7   1/1     Running   0          11s
 ```
+
+## Services
+```
+3 Types of Services
+- Node Port
+- Cluster IP
+- Load Balancer
+```
